@@ -3,24 +3,31 @@
   <p>Create a story and make your child the hero — starting at just $1!</p>
 
   <form id="storyForm">
-    <label for="childName">Child's Name:</label><br>
-    <input type="text" id="childName" name="childName" required><br><br>
+  <label for="childName">Child's Name:</label><br>
+  <input type="text" id="childName" name="childName" required><br><br>
 
-    <label for="childPhoto">Upload Child's Photo:</label><br>
-    <input type="file" id="childPhoto" name="childPhoto" accept="image/*"><br><br>
+  <label for="childPhoto">Upload Child's Photo:</label><br>
+  <input type="file" id="childPhoto" name="childPhoto" accept="image/*"><br><br>
 
-    <label for="theme">Choose a Story Theme:</label><br>
-    <select id="theme" name="theme">
-      <option value="space">Space Adventure</option>
-      <option value="garden">Garden Fun</option>
-      <option value="castle">Castle Fantasy</option>
-      <option value="sea">Sea Explorer</option>
-      <option value="sports">Sports Star</option>
-      <option value="business">Business Leader</option>
-      <option value="health">Health Hero</option>
-      <option value="meaningful">Meaningful Story</option>
-    </select><br><br>
+  <label for="theme">Choose a Story Theme:</label><br>
+  <select id="theme" name="theme">
+    <option value="space">Space Adventure</option>
+    <option value="garden">Garden Fun</option>
+    <option value="castle">Castle Fantasy</option>
+    <option value="sea">Sea Explorer</option>
+    <option value="sports">Sports Star</option>
+    <option value="business">Business Leader</option>
+    <option value="health">Health Hero</option>
+    <option value="meaningful">Meaningful Story</option>
+  </select><br><br>
 
-    <button type="submit">Create My Story</button>
-  </form>
+  <label for="numStories">Number of Stories:</label><br>
+  <select id="numStories" name="numStories">
+    <option value="1">1 Story ($1)</option>
+    <option value="5">5 Stories ($3.99)</option>
+    <option value="15">15 Stories ($5.99)</option>
+  </select><br><br>
+
+  <button type="submit">Create My Story</button>
+</form>
 </body>
