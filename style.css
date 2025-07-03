@@ -99,3 +99,10 @@ footer a {
 footer a:hover {
   text-decoration: none;
 }
+.trust-signs {
+  margin-top: 10px;
+}
+
+.trust-signs img {
+  vertical-align: middle;
+}
