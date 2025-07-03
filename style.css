@@ -84,3 +84,18 @@ button:hover {
   font-size: 1.1em;
   line-height: 1.5;
 }
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
