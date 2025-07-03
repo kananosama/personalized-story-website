@@ -106,3 +106,28 @@ footer a:hover {
 .trust-signs img {
   vertical-align: middle;
 }
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="file"],
+  select {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  #how-it-works {
+    margin: 20px 0;
+  }
+}
