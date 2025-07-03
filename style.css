@@ -66,3 +66,21 @@ button {
 button:hover {
   background-color: #e85a4f;
 }
+#how-it-works {
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#how-it-works h2 {
+  color: #ff6f61;
+}
+
+#how-it-works p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
