@@ -1,236 +1,152 @@
-/* Import Google Fonts for a friendly, modern look */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Quicksand:wght@500;700&display=swap');
-
-/* --- Color Palette Variables --- */
-:root {
-  --primary-bg-light: #f0f8ff; /* Very light sky blue */
-  --primary-bg-dark: #e0f7fa;  /* Slightly darker sky blue */
-  --accent-pink: #ff91a4;     /* Soft, vibrant coral pink */
-  --accent-orange: #ffb580;   /* Warm soft orange */
-  --text-dark: #4a4a4a;       /* Dark charcoal grey for readability */
-  --text-light: #ffffff;      /* White for contrasts */
-  --card-bg: #ffffff;         /* White for form and sections */
-  --border-light: #dcdcdc;    /* Light grey for input borders */
-  --hover-pink: #e87b8f;      /* Slightly darker pink for hover */
-}
-
-/* --- General Body Styles --- */
 body {
-  font-family: 'Lato', sans-serif; /* Readable body font */
-  background: linear-gradient(to bottom right, var(--primary-bg-light), var(--primary-bg-dark)); /* Soft gradient background */
-  color: var(--text-dark);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom right, #f0f8ff, #e0f7fa);
+  color: #333;
   text-align: center;
-  padding: 30px 20px; /* More padding for breathing room */
-  margin: 0;
-  line-height: 1.6;
+  padding: 20px;
 }
 
-/* --- Header Styles --- */
 h1 {
-  font-family: 'Quicksand', sans-serif; /* Playful heading font */
-  color: var(--accent-pink);
-  font-size: 3em; /* Larger heading */
+  color: #ff6f61;
+  font-size: 2.5em;
   margin-bottom: 0.2em;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.05); /* Subtle text shadow */
 }
 
 p {
-  font-size: 1.3em; /* Larger paragraph text */
+  font-size: 1.2em;
   margin-top: 0;
-  margin-bottom: 30px; /* More space below taglines */
-  color: var(--text-dark);
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* --- Image/Logo in Header (if you add it) --- */
-img[alt="My Hero Kid Logo"] {
-  max-width: 200px; /* Slightly larger logo */
   margin-bottom: 20px;
-  border-radius: 10px; /* Soft corners for logo if any */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Gentle shadow for logo */
+  color: #555;
 }
 
-/* --- Form Styles --- */
 form {
-  background-color: var(--card-bg);
-  padding: 30px; /* More internal padding */
-  margin: 30px auto; /* More vertical margin */
-  max-width: 550px; /* Wider form for better layout */
-  border-radius: 20px; /* More rounded corners */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Softer, larger shadow */
-  border: 1px solid var(--border-light); /* Subtle border */
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 label {
-  font-family: 'Quicksand', sans-serif; /* Use heading font for labels */
-  font-weight: 700; /* Bolder */
+  font-weight: bold;
   display: block;
-  margin-top: 20px; /* More space above labels */
-  margin-bottom: 8px;
-  color: var(--text-dark);
-  text-align: left; /* Align labels to the left */
+  margin-top: 15px;
 }
 
 input[type="text"],
 input[type="file"],
 select {
-  width: calc(100% - 20px); /* Adjust width for padding */
-  padding: 12px; /* Larger input fields */
+  width: 90%;
+  padding: 10px;
   margin-top: 5px;
-  border: 2px solid var(--border-light);
-  border-radius: 10px; /* More rounded input fields */
-  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  font-size: 1em;
-  color: var(--text-dark);
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
 }
 
 input[type="text"]:focus,
 input[type="file"]:focus,
 select:focus {
-  border-color: var(--accent-pink); /* Accent color on focus */
-  box-shadow: 0 0 0 3px rgba(255, 145, 164, 0.3); /* Soft glow on focus */
-  outline: none; /* Remove default outline */
+  border-color: #ff6f61;
 }
-
-/* Adjust file input padding as it's often tricky */
-input[type="file"] {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 
 button {
-  margin-top: 30px; /* More space above button */
-  padding: 15px 35px; /* Larger, more clickable button */
-  background-color: var(--accent-pink);
-  color: var(--text-light);
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #ff6f61;
+  color: #fff;
   border: none;
-  border-radius: 12px; /* More rounded button */
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1.1em; /* Larger font on button */
-  font-weight: 700;
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Soft button shadow */
+  font-size: 1em;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: var(--hover-pink);
-  transform: translateY(-2px); /* Subtle lift effect on hover */
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  background-color: #e85a4f;
 }
-
-/* --- How It Works Section --- */
 #how-it-works {
-  background-color: var(--card-bg);
-  padding: 30px; /* More internal padding */
-  margin: 40px auto; /* More vertical margin */
-  max-width: 650px; /* Wider section */
-  border-radius: 20px; /* More rounded corners */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Softer, larger shadow */
-  border: 1px solid var(--border-light); /* Subtle border */
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 #how-it-works h2 {
-  font-family: 'Quicksand', sans-serif;
-  color: var(--accent-pink);
-  font-size: 2.2em; /* Larger heading */
-  margin-top: 0;
+  color: #ff6f61;
 }
 
 #how-it-works p {
-  color: var(--text-dark);
+  color: #555;
   font-size: 1.1em;
-  line-height: 1.6;
+  line-height: 1.5;
 }
-
-/* --- Footer Styles --- */
 footer {
-  margin-top: 50px; /* More space above footer */
-  padding: 30px 20px;
-  background-color: var(--accent-pink); /* Footer matches accent color */
-  color: var(--text-light);
-  border-top-left-radius: 20px; /* Rounded top corners for footer */
-  border-top-right-radius: 20px;
-  box-shadow: 0 -5px 15px rgba(0,0,0,0.1); /* Shadow for footer */
-}
-
-footer p {
-  color: var(--text-light);
-  font-size: 0.95em;
-  margin: 5px 0;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ff6f61;
+  color: #fff;
 }
 
 footer a {
-  color: var(--text-light);
+  color: #fff;
   text-decoration: underline;
-  transition: text-decoration 0.3s ease-in-out;
 }
 
 footer a:hover {
   text-decoration: none;
 }
-
-/* --- Trust Signs --- */
 .trust-signs {
-  margin-top: 20px;
-  display: flex; /* Use flexbox for alignment */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  gap: 15px; /* Space between images */
+  margin-top: 10px;
 }
 
 .trust-signs img {
-  height: 45px; /* Slightly larger trust icons */
-  margin: 0; /* Remove individual margins as gap handles spacing */
-  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.1)); /* Subtle shadow for icons */
+  vertical-align: middle;
 }
-
-/* --- Mobile Responsiveness (Existing from Day 14, slightly adjusted for new design) --- */
-@media (max-width: 600px) { /* Adjusted breakpoint slightly */
+@media (max-width: 500px) {
   body {
-    padding: 15px; /* Slightly more padding on small screens */
-  }
-
-  h1 {
-    font-size: 2.2em;
-  }
-
-  p {
-    font-size: 1em;
+    padding: 10px;
   }
 
   form {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 95%; /* Wider on small screens */
+    padding: 15px;
+    width: 100%;
   }
 
   input[type="text"],
   input[type="file"],
   select {
-    width: calc(100% - 24px); /* Adjust width for padding and border */
-    padding: 10px;
+    width: 100%;
   }
 
   button {
-    width: 95%;
+    width: 100%;
     padding: 12px;
   }
 
   #how-it-works {
-    margin: 30px auto;
-    max-width: 95%;
-    padding: 20px;
+    margin: 20px 0;
   }
+}#faq {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
 
-  .trust-signs {
-    flex-wrap: wrap; /* Allow icons to wrap if too many */
-    gap: 10px;
-  }
+#faq h2 {
+  color: #ff6f61;
+}
 
-  .trust-signs img {
-    height: 40px; /* Adjust size for mobile */
-  }
+#faq h3 {
+  margin-top: 15px;
+  color: #333;
+}
+
+#faq p {
+  color: #555;
+  line-height: 1.5;
 }
