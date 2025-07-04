@@ -1,4 +1,42 @@
 body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  line-height: 1.6;
+}
+
+header h1 {
+  color: #ff6f61;
+}
+
+form button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff3b2e;
+}
+
+footer p {
+  color: #666;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   background: linear-gradient(to bottom right, #f0f8ff, #e0f7fa);
   color: #333;
