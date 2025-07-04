@@ -1,59 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>My Hero Kid</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Create fun personalized stories for your kids in seconds! Just $1 per story at My Hero Kid.">
+  <meta name="keywords" content="kids stories, personalized stories, bedtime stories, custom story, My Hero Kid">
+  <meta name="author" content="My Hero Kid">
+
+  <!-- Social Sharing Meta Tags -->
+  <meta property="og:title" content="My Hero Kid - Personalized Kids Stories">
+  <meta property="og:description" content="Make your child the hero! Personalized stories in seconds for just $1.">
+  <meta property="og:image" content="https://kananosama.github.io/personalized-story-website/yourimage.jpg">
+  <meta property="og:url" content="https://kananosama.github.io/personalized-story-website/">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
 <body>
-  <h1>Welcome to My Hero Kid!</h1>
-  <p>Create a story and make your child the hero — starting at just $1!</p>
-<h1>My Hero Kid</h1>
-<p>Create a magical personalized story for your child in seconds — starting at just $1!</p>
+  <header>
+    <h1>My Hero Kid</h1>
+    <p>Create personalized stories for your children — they are the hero!</p>
+  </header>
 
-  <form id="storyForm">
-  <label for="childName">Child's Name:</label><br>
-  <input type="text" id="childName" name="childName" required><br><br>
+  <form>
+    <label for="name">Child's Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter child's name" required>
 
-  <label for="childPhoto">Upload Child's Photo:</label><br>
-  <input type="file" id="childPhoto" name="childPhoto" accept="image/*"><br><br>
+    <label for="photo">Child's Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
 
-  <label for="theme">Choose a Story Theme:</label><br>
-  <select id="theme" name="theme">
-    <option value="space">Space Adventure</option>
-    <option value="garden">Garden Fun</option>
-    <option value="castle">Castle Fantasy</option>
-    <option value="sea">Sea Explorer</option>
-    <option value="sports">Sports Star</option>
-    <option value="business">Business Leader</option>
-    <option value="health">Health Hero</option>
-    <option value="meaningful">Meaningful Story</option>
-  </select><br><br>
+    <label for="theme">Choose a Story Type:</label>
+    <select id="theme" name="theme">
+      <option value="fun">Fun & Adventure</option>
+      <option value="space">Space</option>
+      <option value="garden">Garden</option>
+      <option value="castle">Castle</option>
+      <option value="sea">Sea</option>
+      <option value="sports">Sports Athlete</option>
+      <option value="health">Health & Wellness</option>
+      <option value="meaningful">Meaningful & Life Lessons</option>
+      <option value="business">Business & Smart Ideas</option>
+    </select>
 
-  <label for="numStories">Number of Stories:</label><br>
-  <select id="numStories" name="numStories">
-    <option value="1">1 Story ($1)</option>
-    <option value="5">5 Stories ($3.99)</option>
-    <option value="15">15 Stories ($5.99)</option>
-  </select><br><br>
+    <p>Choose your package:</p>
+    <a href="https://www.paypal.com/ncp/payment/HH9SJZTCG9PLY"><button type="button">1 Story — $1</button></a>
+    <a href="https://www.paypal.com/ncp/payment/3TBPY3N73CSSS"><button type="button">5 Stories — $3.99</button></a>
+    <a href="https://www.paypal.com/ncp/payment/5A98H4Z2AKEEY"><button type="button">15 Stories — $5.99</button></a>
+  </form>
 
-  <button type="submit">Create My Story</button>
-</form>
   <section id="how-it-works">
-  <h2>How It Works</h2>
-  <p>Choose your child's name, upload a photo, and select a fun theme. Then pick how many stories you'd like — and voilà! Your personalized story is ready to download instantly after payment.</p>
-</section>
-<section id="faq">
-  <h2>Frequently Asked Questions</h2>
-  <h3>What age is this for?</h3>
-  <p>Our stories are great for kids aged 3 to 15 — fun and personalized to inspire their imagination!</p>
-  
-  <h3>How do I get the story?</h3>
-  <p>After payment, your personalized story is generated instantly as a PDF for you to download.</p>
-  
-  <h3>Can I order more than one story?</h3>
-  <p>Yes! You can select different options, and you can always come back to create more.</p>
-</section>
+    <h2>How it works</h2>
+    <p>Enter your child’s name, upload a photo, pick a story type — and get a personalized story instantly!</p>
+  </section>
 
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <h3>What age is this for?</h3>
+    <p>Our stories are great for kids aged 3 to 10 — fun and personalized to inspire their imagination!</p>
+
+    <h3>How do I get the story?</h3>
+    <p>After payment, your personalized story is generated instantly as a PDF for you to download.</p>
+
+    <h3>Can I order more than one story?</h3>
+    <p>Yes! You can select different options, and you can always come back to create more.</p>
+  </section>
+
+  <footer>
+    <p>Contact us at <a href="mailto:info@myherokid.com">info@myherokid.com</a></p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+    <p>Secure payments with <strong>PayPal</strong> ✔️</p>
+  </footer>
 </body>
-<footer>
-  <p>Contact us: <a href="mailto:info@myherokid.com">info@myherokid.com</a></p>
-  <p>&copy; 2025 My Hero Kid. All rights reserved.</p>
-  <div class="trust-signs">
-    <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/pp-acceptance-small.png" alt="Pay with PayPal" style="height: 40px; margin: 5px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lock_font_awesome.svg/512px-Lock_font_awesome.svg.png" alt="Secure Site" style="height: 40px; margin: 5px;">
-  </div>
-</footer>
+</html>
