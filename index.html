@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>My Hero Kid</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css" />
 
   <!-- SEO Meta Tags -->
@@ -25,31 +24,19 @@
     <p>Create personalized stories for your children — they are the hero!</p>
   </header>
 
-  <form>
-    <label for="name">Child's Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter child's name" required>
-
-    <label for="photo">Child's Photo:</label>
-    <input type="file" id="photo" name="photo" accept="image/*">
-
-    <label for="theme">Choose a Story Type:</label>
-    <select id="theme" name="theme">
-      <option value="fun">Fun & Adventure</option>
-      <option value="space">Space</option>
-      <option value="garden">Garden</option>
-      <option value="castle">Castle</option>
-      <option value="sea">Sea</option>
-      <option value="sports">Sports Athlete</option>
-      <option value="health">Health & Wellness</option>
-      <option value="meaningful">Meaningful & Life Lessons</option>
-      <option value="business">Business & Smart Ideas</option>
-    </select>
-
-    <p>Choose your package:</p>
-    <a href="https://www.paypal.com/ncp/payment/HH9SJZTCG9PLY"><button type="button">1 Story — $1</button></a>
-    <a href="https://www.paypal.com/ncp/payment/3TBPY3N73CSSS"><button type="button">5 Stories — $3.99</button></a>
-    <a href="https://www.paypal.com/ncp/payment/5A98H4Z2AKEEY"><button type="button">15 Stories — $5.99</button></a>
-  </form>
+  <!-- Order Form Embed -->
+  <section id="order-form" style="margin: 40px auto; max-width: 800px;">
+    <h2 style="color: #ff6f61; font-size: 2em; text-align: center;">
+      Create Your Personalized Story
+    </h2>
+    <iframe
+      src="https://form.jotform.com/251946113950053"
+      title="Personalized Kids Story Order Form"
+      style="width: 100%; height: 700px; border: none;"
+      allow="camera; microphone; geolocation"
+      allowfullscreen>
+    </iframe>
+  </section>
 
   <section id="how-it-works">
     <h2>How it works</h2>
@@ -75,4 +62,3 @@
   </footer>
 </body>
 </html>
-<p><a href="privacy.html">Privacy Policy</a></p>
